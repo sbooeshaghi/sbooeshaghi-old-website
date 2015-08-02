@@ -27,7 +27,7 @@
 }
 
 .text-wrapper-center {
-  position: absolute;
+  position: fixed;
   top: 30%;
   /*align-content: center;*/
   left:50%;
