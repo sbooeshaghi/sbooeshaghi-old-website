@@ -21,6 +21,7 @@
 .container center-text{
   position: relative;
   height: 14rem;
+  align-self: center;
   
   /*border: 1px solid;*/
 }
@@ -28,6 +29,7 @@
 .text-wrapper {
   position: absolute;
   top: 30%;
+  align-content: center;
   left:50%;
   transform: translate(-50%,-50%);
   text-align: center;
