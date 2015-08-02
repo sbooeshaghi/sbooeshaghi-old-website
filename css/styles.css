@@ -9,14 +9,11 @@
     /*border: 1px solid;*/
 }
 
-.text-wrapper-center {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    top: 30%;
-    text-align: center;
-    padding-top:25px
-
-    /*border: 1px dashed deeppink;*/
+.v-center {
+  width: 50%;
+  height: 60%;
+  overflow: visible;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 }
-
