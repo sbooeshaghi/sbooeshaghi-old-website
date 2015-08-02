@@ -29,10 +29,11 @@
 .text-wrapper {
   position: absolute;
   top: 30%;
-  align-content: center;
+  /*align-content: center;*/
   left:50%;
   transform: translate(-50%,-50%);
   text-align: center;
+  padding-top:100px
   
   /*border: 1px dashed deeppink;*/
 }
