@@ -17,3 +17,32 @@
     line-height: normal;
     
 }
+
+.container center-text{
+  position: relative;
+  height: 14rem;
+  
+  /*border: 1px solid;*/
+}
+
+.text-wrapper {
+  position: absolute;
+  top: 30%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  
+  /*border: 1px dashed deeppink;*/
+}
+
+h1 {
+    font-size: 5.9vw;
+}
+
+h2 {
+    font-size: 3.0vh;
+}
+
+p {
+    font-size: 2vmin;
+}
