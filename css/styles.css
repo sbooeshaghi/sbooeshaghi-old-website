@@ -33,7 +33,11 @@
   left:50%;
   transform: translate(-50%,-50%);
   text-align: center;
-  padding-top:25px
+  padding-top:25px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   
   /*border: 1px dashed deeppink;*/
 }
