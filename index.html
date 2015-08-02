@@ -1,6 +1,6 @@
 <!-- index.html for your very first website!! -->
 
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
 <html>
 
@@ -9,10 +9,81 @@
 		<meta name="viewport" content = "width=device-width, initial-scale=1.0">
 		<link href = "css/bootstrap.min.css" rel = "stylesheet">
 		<link href = "css/styles.css" rel = "stylesheet">
+        
+
 	</head>
 
-	<body bgcolor="#FFFFFF">
+	<body>
+        <style>		
+            * { margin: 0; padding: 0; }
+        body { 
+                background: url(css/coverimg.png) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        </style>
+        
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+        
+<!-- =======================Top Nav Bar============================== -->
+        <!---->
+		<div class = "navbar navbar-inverse navbar-fixed-top" ><!--navbar-static-top-->
+	  		<div class="container">
+		  		<div class = "navbar-header">
+		  			<a class = "navbar-brand" href="index.html">Sina Booeshaghi</a>
+                    <!-- This engages the mobile selection when screen size gets small -->
+		  			<button type="button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+		  				<span class = "icon-bar"></span>
+		  				<span class = "icon-bar"></span>
+		  				<span class = "icon-bar"></span>
+		  			</button>
+		  		</div>
 
+	  			<div class = "collapse navbar-collapse navHeaderCollapse">
+	  				<ul class = "nav navbar-nav navbar-right">
+                        <!-- Nav Bar Components -->
+	  					<li class = "active"><a href = "index.html">Home</a></li>
+	  					<li><a href = "about.html">About</a></li>
+                        <!-- Projects link has a dropdown menu for the different projects -->
+	  					<!--<li class = "dropdown">
+	  						<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Projects <b class = "caret"></b></a>
+	  						<ul class = "dropdown-menu">
+	  							<li><a href = "#">P1</a></li>
+	  							<li><a href = "#">P2</a></li>
+	  							<li><a href = "#">P3</a></li>
+	  						</ul>
+	  					</li>-->
+                        <li><a href = "projects.html">Projects</a></li>
+	  					<li><a href = "./resume.pdf">Resume</a></li>
+	  					<li><a href = "contact.html">Contact</a></li>
+	  				</ul>
+  				</div>
+  			</div>
+	 	</div>
+        
+<!--============================End of navbar================================-->
+        
+        <div class="vertical-center">
+            <div class="offset">
+                <h1 class="text-center"><font size=100px>Welcome</font></h1>
+                <h1><small>This is still a work in progress</small></h1>
+            </div>
+        </div>
+
+        <!-- Bottom Nav bar -->
+	 	<div class = "navbar navbar-default navbar-fixed-bottom">
+	 		<div class = "container">
+                <p class = "navbar-text pull-left">Built by Sina Booeshaghi</p>
+                <!-- This is where you link your resume within the local files -->
+                <a href="./resume.pdf" class = "navbar-btn btn-info btn pull-right">Resume Download</a>
+	 		</div>
+
+	 	</div>
+
+<!--
 		<center>
 			<h1><u>Sina Booeshaghi</u></h1>
 
@@ -33,8 +104,9 @@
 			<h4>Copyright © 2015, by
 			<a href="https://www.linkedin.com/pub/ali-sina-booeshaghi/82/29a/57b">Sina Booeshaghi</a>
 			</h4>
-		</center>
+		</center>-->
 
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="js/bootstrap.js"></script>
+
 	</body>
+
+</html>
