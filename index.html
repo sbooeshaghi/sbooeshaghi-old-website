@@ -3,45 +3,30 @@
     <!DOCTYPE html>
 
 <html>
-
+    <!-- head -->
 	<head>
 		<title>Sina Booeshaghi</title>
 		<meta name="viewport" content = "width=device-width, initial-scale=1.0, maximum-scale-1.0">
 		<link href = "css/bootstrap.min.css" rel = "stylesheet">
 		<link href = "css/styles.css" rel = "stylesheet">
+        <link href = "css/scrolling-nav.css" rel="stylesheet">
+
+        <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700|Montserrat' rel='stylesheet' type='text/css'>
         
-        <style>
-            body {
-                padding-top: 0px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-        </style>
         
 
 	</head>
+    <!-- End head -->
 
-	<body>
-        <style>		
-            * { margin: 0; padding: 0; }
-        body { 
-                background: url(css/coverimg.png) no-repeat center center fixed; 
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-            }
-        </style>
-        
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="js/bootstrap.js"></script>
-        
-<!-- =======================Top Nav Bar============================== -->
-        <!---->
-        <!--<div class="container" style="padding-top:10px">-->
-		<div class = "navbar navbar-inverse navbar-static-top" role="navigation"><!--this can be changed to navbar-static-top if issue-->
+    <!-- body -->
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!--<div class="container" style="padding-top:10px">--> 
+        <!-- Top nav bar -->
+		<div class = "navbar-custom navbar-fixed-top" role="navigation" style="border-bottom:1px solid black">
             <div class="container">
-		  		<div class = "navbar-header">
-		  			<a class = "navbar-brand" href="index.html">Sina Booeshaghi</a>
+                <!-- Nav bar header for mobile -->
+		  		<div class = "navbar-header page-scroll">
+		  			<a class = "navbar-brand page-scroll" href="#page-top">Sina Booeshaghi</a>
                     <!-- This engages the mobile selection when screen size gets small -->
 		  			<button type="button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
 		  				<span class = "icon-bar"></span>
@@ -49,74 +34,161 @@
 		  				<span class = "icon-bar"></span>
 		  			</button>
 		  		</div>
-
+                <!-- End nav bar header for mobile -->
+                
+                <!-- Nav Bar Components -->
 	  			<div class = "collapse navbar-collapse navHeaderCollapse">
 	  				<ul class = "nav navbar-nav navbar-right">
-                        
-                        <!-- Nav Bar Components -->
-	  					<li class="active"><a href = "index.html">Home</a></li>
-	  					<li><a href = "about.html">About</a></li>
-                        <!-- Projects link has a dropdown menu for the different projects -->
-	  					<!--<li class = "dropdown">
-	  						<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Projects <b class = "caret"></b></a>
-	  						<ul class = "dropdown-menu">
-	  							<li><a href = "#">P1</a></li>
-	  							<li><a href = "#">P2</a></li>
-	  							<li><a href = "#">P3</a></li>
-	  						</ul>
-	  					</li>-->
-                        <li><a href = "projects.html">Projects</a></li>
-	  					<li><a href = "resume.html">Resume</a></li>
-	  					<li><a href = "contact.html">Contact</a></li>
+                        <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+	  					<li><a class = "page-scroll" href="#page-top">Home</a></li>
+	  					<li><a class = "page-scroll" href="#about">About</a></li>
+                        <li><a class = "page-scroll" href="#projects">Projects</a></li>
+	  					<li><a class = "page-scroll" href="#section4">Resume</a></li>
+	  					<li><a class = "page-scroll" href="#section5">Contact</a></li>
 
 	  				</ul>
   				</div>
+                <!-- End navbar components -->
   			</div>
-
+            <!-- End container -->
         </div>
+        <!-- End top nav bar -->
         
-<!--============================End of navbar================================-->
-        <div class="container v-center" style="">
-                <h3 class="text-center">HELLO PEOPLE, MY NAME IS</h3>
-            <h1 class="text-center"><font size=100pt>SINA</font></h1>
-                <h2 class="text-center"><small>&iexcl;Under construction!</small></h2>
-        </div>
+        
+        <!-- Title header -->
+        <section class="container" id="section1">
+            <h1 class="v-center lead" id="stroke">WELCOME</h1>
+        </section>
+        <!-- End title header -->
+        
+        
+        <!-- About section -->
+        <section class="container-fluid" id="about">
+            <div class="col-lg-12" style="padding-top: 1em; padding-bottom:1em;">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 class="page-header">Meet Sina</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-justify" style="font-size:calc(100% + .45vw);">Sina Booeshaghi is a junior at the Massachusetts Institute of Technology studying Mechanical Engineering and Math. He is co-president of MIT-ASME, Corporate Relations director of TechX, and Chair of Education, yet still finds time to challenge himself academically. Currently, he is spearheading a major campus-wide movement to improve grade transparency at MIT in order to better help manage student stress. A true Floridian at heart, Sina will often be found casually sipping tea next to a space heater in an attempt to brave the Cambridge Winters. He lives at and is a member of the Kappa Sigma Fraternity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End about section
 
 
-        <!-- Bottom Nav bar -->
+        <!-- Begin projects section -->
+        <section class="container-fluid" id="projects">
+            <div class="col-lg-12" style="padding-top: 1em; padding-bottom:1em;">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 class="page-header">Projects
+                        </h1>
+                    </div>
+                </div>
+            <!-- begin row 1-->
+                <div class="row">
+                    <div class="col-md-6 portfolio-item">
+                        <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/700x400">
+                        </a>
+                        <h3>
+                            <a href="#">Project1</a>
+                        </h3>
+                        <p>Insert paragraph about this</p>
+                    </div>
+                    <div class="col-md-6 portfolio-item">
+                        <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/700x400">
+                        </a>
+                        <h3>
+                            <a href="#">Project 2</a>
+                        </h3>
+                        <p>Insert paragraph about this</p>
+                    </div>
+                </div>
+                <!--End Row 1-->
+
+                <!-- begin row 2 -->
+                <div class="row">
+                    <div class="col-md-6 portfolio-item">
+                        <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/700x400">
+                        </a>
+                        <h3>
+                            <a href="#">Project 3</a>
+                        </h3>
+                        <p>Insert paragraph about this</p>
+                    </div>
+                    <div class="col-md-6 portfolio-item">
+                        <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/700x400">
+                        </a>
+                        <h3>
+                            <a href="#">Project 4</a>
+                        </h3>
+                        <p>Insert paragraph about this</p>
+                    </div>
+                </div>
+                <!-- end row 2 -->
+
+                <!-- Begin row 3 -->
+                <div class="row">
+                    <div class="col-md-6 portfolio-item">
+                        <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/700x400">
+                        </a>
+                        <h3>
+                            <a href="#">Project 5</a>
+                        </h3>
+                        <p>Insert paragraph about this</p>
+                    </div>
+                    <div class="col-md-6 portfolio-item">
+                        <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/700x400">
+                        </a>
+                        <h3>
+                            <a href="#">Project 6</a>
+                        </h3>
+                        <p>Insert paragraph about this</p>
+                    </div>
+                </div>
+        <!-- end row 2 -->
+            </div>
+        </section>
+        <!-- End projects section -->
+        <!-- End body content -->
+
+
+        <!-- Bottom nav bar -->
 	 	<div class = "navbar navbar-invert navbar-fixed-bottom">
 	 		<div class = "container">
                 <p class = "navbar-text pull-left">Built by Sina Booeshaghi</p>
                 <!-- This is where you link your resume within the local files -->
                 <a href="./resume.pdf" class = "navbar-btn btn-info btn pull-right">Resume Download</a>
 	 		</div>
-
+            <!-- End container -->
 	 	</div>
+        <!-- End bottom nav bar -->
+        
+        <!--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.js"></script>-->
+        
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
 
-<!--
-		<center>
-			<h1><u>Sina Booeshaghi</u></h1>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-	 
-
-	  		<img src="http://media.cmgdigital.com/shared/img/photos/2013/05/07/b3/d5/20130506_npc_booeshaghi_006.jpg" width="420" height="300">
-
- 
-
- 
-		</center>
-
-
-		<h2>Feel free to peruse, this is a work in progress</h2>
-
-		Sina Booeshaghi is a junior at the Massachusetts Institute of Technology studying Mechanical Engineering and Math. He is co-president of MIT-ASME, Corporate Relations director of TechX, and Chair of Education, yet still finds time to challenge himself academically. Currently, he is spearheading a major campus-wide movement to improve grade transparency at MIT in order to better help manage student stress. A true Floridian at heart, Sina will often be found casually sipping tea next to a space heater in an attempt to brave the Cambridge Winters. He lives at and is a member of the Kappa Sigma Fraternity.<P>
-		<center>
-			<h4>Copyright © 2015, by
-			<a href="https://www.linkedin.com/pub/ali-sina-booeshaghi/82/29a/57b">Sina Booeshaghi</a>
-			</h4>
-		</center>-->
-
+        <!-- Scrolling Nav JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrolling-nav.js"></script>
+        
 
 	</body>
+    <!-- End body -->
 
 </html>
