@@ -171,13 +171,14 @@ h1, h2, h3, h4, h5, h6 {
 .v-center {
     padding-top:7%;
     padding-bottom:3%;
-    font-size:70px;
+    font-size:60px;
 }
 
 section {
     padding-top:30px;
     padding-bottom:50px;
     /*min-height:calc(100% - 1px);*/
+    width:100%;
 }
 
 html, body {
@@ -187,6 +188,7 @@ html, body {
     -moz-background-size: cover;
     -o-background-size: cover;
     height:100%;
+    width:100%;
 }
 
 #section1 {
@@ -198,6 +200,7 @@ html, body {
 }
 
 #about {
+    width:100%;
     background-color:#2D828A;
     color:black;
     padding-left:10%;
@@ -205,6 +208,7 @@ html, body {
 }
 
 #projects {
+    width:100%;
     background-color:#E34848;
     color:black;
     padding-left:10%;
