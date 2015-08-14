@@ -165,6 +165,11 @@ h1, h2, h3, h4, h5, h6 {
 font-family: 'Economica', sans-serif;
 }
 
+section1 h1 {
+   font-family: 'Merienda', cursive;
+   font-weight: 700;
+}
+
 p {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: 300;
@@ -190,7 +195,7 @@ section {
 
 html, body {
     background:center center no-repeat fixed url("makemit.jpg");
-    background-size: 100% 100%;
+    background-size: contain;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -219,3 +224,23 @@ html, body {
     padding-left:10%;
     padding-right:10%;
 }
+
+#resume {
+    width:100%;
+    padding-top:7%;
+    padding-bottom: 7%;
+}
+
+#contact {
+    width:100%;
+    background-color:darkorange;
+    color:black;
+    height:600px;
+}
+
+/*#footer {
+    width:100%;
+    background-color: black;
+    color:black;
+    height:50px;
+}*/
