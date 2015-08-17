@@ -1,47 +1,68 @@
 <?php
-        $name = $_PAST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $human = intval($_POST['human']);
-        $from = 'Contact Form';
-        $to = 'contactsina@mit.edu';
-        $subject = '[PWS] New messaage: $name';
-        $body = "From: $name\n E-mail: $email\n Message:\n $message";
+/* Set e-mail recipient */
+    $myemail = "contactsina@mit.edu";
 
+    /* Check all form inputs using check_input function */
+    $name = check_input($_POST['inputName'], "Your Name");
+    $email = check_input($_POST['inputEmail'], "Your E-mail Address");
+    $subject = check_input($_POST['inputSubject'], "Message Subject");
+    $message = check_input($_POST['inputMessage'], "Your Message");
 
-    if (isset($_POST["submit"])) {
-
-        
-        // Check if name has been entered
-        if (!$_POST['name']) {
-            $errName = 'Please enter your name';
+    /* If e-mail is not valid show error message */
+    if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
+        {
+        show_error("Invalid e-mail address");
         }
+    /* Let's prepare the message for the e-mail */
 
-        // Check if email valid
-        if (!$_POST['email'] || !filter_var($POST['email'], FILTER_VALIDATE_EMAIL)) {
-            $errEmail = 'Please enter a valid email address';
-        }
+    $subject = "[PWS] New Message";
 
-        if (!$_POST['message']) {
-            $errMessage = 'Please enter your message';
-        }
-        
-        // Check if human
-        if ($human !== 0) {
-            $errHuman = 'Incorrect, please re-try';
-        }
-    
+    $message = "
 
+    Someone has sent you a message using your contact form:
 
-// If no errors, submit form
-if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
-    if (mail ($to, $subject, $body, $from)) {
-        $result='<div class="alert alert-success">Thank you! I will be in touch</div>';
-    } else {
-        $result='<div class="alert alert-danger">Sorry, there was an error sending your message. Try again later!</div>';
+    Name: $name
+    Email: $email
+    Subject: $subject
+
+    Message:
+    $message
+
+    ";
+
+    /* Send the message using mail() function */
+    mail($myemail, $subject, $message);
+
+    /* Redirect visitor to the thank you page */
+    header('Location: http://sinabooeshaghi.com/confirm.html');
+    exit();
+
+    /* Functions we used */
+    function check_input($data, $problem='')
+    {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        if ($problem && strlen($data) == 0)
+            {
+            show_error($problem);
+            }
+    return $data;
     }
 
+    function show_error($myError)
+    {
+        ?>
+        <html>
+        <body>
+
+        <p>Please correct the following error:</p>
+        <strong><?php echo $myError; ?></strong>
+        <p>Hit the back button and try again</p>
+
+        </body>
+        </html>
+        <?php
+        exit();
 }
-
-    }
 ?>
