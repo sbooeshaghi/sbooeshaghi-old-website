@@ -15,7 +15,7 @@
         }
     /* Let's prepare the message for the e-mail */
 
-    $subject = "[PWS] New Message";
+    $email_subject = "[PWS] New Message";
 
     $message = "
 
@@ -31,10 +31,10 @@
     ";
 
     /* Send the message using mail() function */
-    mail($myemail, $subject, $message);
+    mail($myemail, $email_subject, $message, $headers);
 
     /* Redirect visitor to the thank you page */
-    header('Location: http://sinabooeshaghi.com/confirm.html');
+    header('Location: confirm.html');
     exit();
 
     /* Functions we used */
