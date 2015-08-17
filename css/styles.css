@@ -1,10 +1,5 @@
-/* CSS - Cascading Style Sheet */
 /* Palette color codes */
 /* Palette URL: http://paletton.com/#uid=5002k0kt+lYlOstrKqyzRi9Jids */
-
-/* Feel free to copy&paste color codes to your application */
-
-
 /* As hex codes */
 
 .color-primary-0 { color: #AF0B0B }	/* Main Primary color */
@@ -25,10 +20,7 @@
 .color-secondary-2-3 { color: #5D8800 }
 .color-secondary-2-4 { color: #456400 }
 
-
-
 /* As RGBa codes */
-
 .rgba-primary-0 { color: rgba(175, 11, 11,1) }	/* Main Primary color */
 .rgba-primary-1 { color: rgba(227, 72, 72,1) }
 .rgba-primary-2 { color: rgba(211, 28, 28,1) }
@@ -47,6 +39,8 @@
 .rgba-secondary-2-3 { color: rgba( 93,136,  0,1) }
 .rgba-secondary-2-4 { color: rgba( 69,100,  0,1) }
 
+
+/*Custom Navbar I ended up not using*/
 .navbar-custom {
   background-color:#2D828A;
   border-color: #74A40A;/* #013337;*/
@@ -160,30 +154,40 @@
     
 }
 
+h1 {
+font-family: 'Maven Pro', sans-serif;
+font-size:calc(100% + 5vw);
+}
 
-h1, h2, h3, h4, h5, h6 {
-font-family: 'Economica', sans-serif;
+h2 {
+font-family: 'Maven Pro', sans-serif;
+font-size:calc(100% + 1vw);
+}
+
+h3, h4, h5, h6 {
+font-family: 'Maven Pro', sans-serif;
 }
 
 section1 h1 {
-   font-family: 'Merienda', cursive;
-   font-weight: 700;
+   font-family: 'Maven Pro', sans-serif;
+   font-weight: 900;
+   font-size:calc(100% + 1vw); 
 }
 
 p {
-    font-family: 'Roboto Slab', sans-serif;
-    font-weight: 300;
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    font-size:calc(100% + .45vw);
 }
 
 a {
-    font-family: 'Cabin', sans-serif;
-    font-weight: 900;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 300;
 }
 
 .v-center {
     padding-top:7%;
     padding-bottom:3%;
-    font-size:60px;
 }
 
 section {
@@ -210,7 +214,7 @@ html, body {
 }
 
 #about {
-    background-color:darkolivegreen;
+    background-color:#2D828A; /*darkolivegreen;*/
     color:black;
     width:100%;
     padding-left:10%;
@@ -233,14 +237,18 @@ html, body {
 
 #contact {
     width:100%;
-    background-color:darkorange;
+    background-color:darkolivegreen;
+    /*background: url(cubes.png) repeat 0 0;*/
     color:black;
-    height:600px;
+    height:800px;
+    padding-bottom:0;
 }
 
-/*#footer {
+#bottom-nav {
     width:100%;
-    background-color: black;
-    color:black;
-    height:50px;
-}*/
+    padding-bottom: 0;
+    padding-top: 0;
+    
+
+}
+

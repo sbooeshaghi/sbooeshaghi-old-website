@@ -1,9 +1,61 @@
 <!-- index.html for your very first website!! -->
+<!--
+                  __..-----')
+        ,.--._ .-'_..--...-'
+       '-"'. _/_ /  ..--''""'-.
+       _.--""...:._:(_ ..:"::. \
+    .-' ..::--""_(##)#)"':. \ \)    \ _|_ /
+   /_:-:'/  :__(##)##)    ): )   '-./'   '\.-'
+   "  / |  :' :/""\///)  /:.'    --(       )--
+     / :( :( :(   (#//)  "       .-'\.___./'-.
+    / :/|\ :\_:\   \#//\            /  |  \
+    |:/ | ""--':\   (#//)              '
+    \/  \ :|  \ :\  (#//)
+         \:\   '.':. \#//\
+          ':|    "--'(#///)
+                     (#///)
+                     (#///)         ___/""\     
+                      \#///\           oo##
+                      (##///)         `-6 #
+                      (##///)          ,'`.
+                      (##///)         // `.\
+                      (##///)        ||o   \\
+                       \##///\        \-+--//
+                       (###///)       :_|_(/
+                       (sjw////)__...--:: :...__
+                       (#/::'''        :: :     ""--.._
+                  __..-'''           __;: :            "-._
+          __..--""                  `---/ ;                '._
+ ___..--""                             `-'                    "-..___
+   (_ ""---....___                                     __...--"" _)
+     """--...  ___"""""-----......._______......----"""     --"""
+                   """"       ---.....   ___....----
 
-    <!DOCTYPE html>
+
+Greetings from the island! Not actually an island, but I love the sun and the beach, 
+so I like to always imagine I'm on an island.
+
+If you are looking at my code, chances are you are interested in determining if this
+is a templated website. 
+
+WELL IT ISN'T! I wrote the entire website from scratch (and with the help of tutorials). 
+Knowing that, if you happen to see anything wrong/could be improved on/stylistic choices, 
+please tell me!! I'm always looking to improve, and another pair of eyes would be appreciated.
+I hope you enjoy!
+
+P.S. If you like coffee/tea and new technology, contact me and I'd be more than happy 
+to sit down and chat!
+
+Regards,
+Sina
+-->
+
+<!-- Add skills section -->
+
+<!DOCTYPE html>
 
 <html>
-    <!-- head -->
+<!-- Head content -->
 	<head>
 		<title>Sina Booeshaghi</title>
 		<meta name="viewport" content = "width=device-width, initial-scale=1.0, maximum-scale-1.0">
@@ -17,53 +69,46 @@
         <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Merienda:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,900,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
 
 	</head>
-    <!-- End head -->
+<!-- End head content -->
 
-    <!-- body -->
-	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!--<div class="container" style="padding-top:10px">--> 
-        <!-- Top nav bar -->
-		<div class = "navbar-custom navbar-fixed-top" role="navigation" style="border-bottom:1px solid black">
-            <div class="container-fluid">
-                <!-- Nav bar header for mobile -->
-		  		<div class = "navbar-header page-scroll">
-		  			<a class = "navbar-brand page-scroll" href="#page-top">Sina Booeshaghi</a>
-                    <!-- This engages the mobile selection when screen size gets small -->
-		  			<button type="button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-		  				<span class = "icon-bar"></span>
-		  				<span class = "icon-bar"></span>
-		  				<span class = "icon-bar"></span>
-		  			</button>
-		  		</div>
-                <!-- End nav bar header for mobile -->
-                
-                <!-- Nav Bar Components -->
-	  			<div class = "collapse navbar-collapse navHeaderCollapse">
-	  				<ul class = "nav navbar-nav navbar-right">
-                        <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
-	  					<li><a class = "page-scroll" href="#page-top">Home</a></li>
-	  					<li><a class = "page-scroll" href="#about">About</a></li>
-                        <li><a class = "page-scroll" href="#projects">Projects</a></li>
-	  					<li><a class = "page-scroll" href="#resume">Résumé</a></li>
-	  					<li><a class = "page-scroll" href="#contact">Contact</a></li>
+<!-- Body content -->
+	<body>
 
-	  				</ul>
-  				</div>
-                <!-- End navbar components -->
-  			</div>
-            <!-- End container -->
+        <!-- Top static navbar -->
+        <div class="navbar navbar-inverse navbar-fixed-top" style="padding-top:0;padding-bottom:0;">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <a class="navbar-brand" href="#">Sina Booeshaghi</a>
+                  <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+              
+            <div id="navbar" class="navbar-collapse collapse navHeaderCollapse">
+              <ul class="nav navbar-nav navbar-right" id="top-nav">
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Résumé</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-        <!-- End top nav bar -->
-        
-        
+        <!-- End top static navbar -->
+
         <!-- Title header -->
         <section class="container-fluid" id="section1">
-            <h1 class="v-center lead" id="stroke" style="font-size:100px;"><u>WELCOME</u></h1>
+            <h1 class="v-center" id="stroke"><u>WELCOME</u></h1>
         </section>
         <!-- End title header -->
-        
         
         <!-- About section -->
         <section class="container-fluid" id="about">
@@ -75,14 +120,13 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="text-justify" style="font-size:calc(100% + .45vw);">Sina Booeshaghi is a junior at the Massachusetts Institute of Technology studying Mechanical Engineering and Math. He is co-president of MIT-ASME, Corporate Relations director of TechX, and Chair of Education, yet still finds time to challenge himself academically. Currently, he is spearheading a major campus-wide movement to improve grade transparency at MIT in order to better help manage student stress. A true Floridian at heart, Sina will often be found casually sipping tea next to a space heater in an attempt to brave the Cambridge Winters. He lives at and is a member of the Kappa Sigma Fraternity.</p>
+                        <p class="text-justify">Sina Booeshaghi is a junior at the Massachusetts Institute of Technology studying Mechanical Engineering and Math. He is co-president of MIT-ASME, Corporate Relations director of TechX, and Chair of Education, yet still finds time to challenge himself academically. Currently, he is spearheading a major campus-wide movement to improve grade transparency at MIT in order to better help manage student stress. A true Floridian at heart, Sina will often be found casually sipping tea next to a space heater in an attempt to brave the Cambridge Winters. He lives at and is a member of the Kappa Sigma Fraternity.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End about section
-
-
+        <!-- End about section -->
+        
         <!-- Projects section -->
         <section class="container-fluid" id="projects">
             <div class="col-lg-12" style="padding-top: 1em; padding-bottom:1em;">
@@ -176,42 +220,94 @@
         
         <!-- Contact section -->
         <section class="container-fluid" id="contact">
+            <!-- Header -->
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h1 class="page-header">Please submit a message below!</h1>
                 </div>
             </div>
+            <!-- End header -->
+            <!-- Form entry field -->
+            <div class="container">
+                <div class="row">
+                    <?php include 'index.php';?>
+                    <form class="form-horizontal" role="form" method="post">
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+                                <?php echo "<p class='text-danger'>$errName</p>" ;?>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+                                <?php echo "<p class='text-danger'>$errEmail</p>";?>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="col-sm-2 control-label">Message</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+                                <?php echo "<p class='text-danger'>$errMessage</p>";?>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="human" class="col-sm-2 control-label">cos(pi/2) = ?</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                                <?php echo "<p class='text-danger'>$errHuman</p>";?>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <?php echo $result; ?>    
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End form entry field -->
         </section>
+        
+        
         <!-- End contact section -->
+
+
+
+<!-- End body content -->
+
+<!-- Bottom nav bar -->
+        <section class="container-fluid navbar navbar-inverse navbar-fixed-bottom" id="bottom-nav">
+                
+                    <a class = "navbar-text pull-left">Built by Sina Booeshaghi</a>
+                    <!-- This is where you link your resume within the local files -->
+                    <a href="resume.pdf" class = "navbar-btn btn-info btn pull-right">Résumé Download</a>
+                <!-- End container -->
+
+        </section>
+<!-- End bottom nav bar -->
         
-        <!-- End body content -->
-
-
-        <!-- Bottom nav bar -->
-	 	<div class = "navbar navbar-fixed-bottom">
-	 		<div class = "container-fluid">
-                <p class = "navbar-text pull-left">Built by Sina Booeshaghi</p>
-                <!-- This is where you link your resume within the local files -->
-                <a href="resume.pdf" class = "navbar-btn btn-info btn pull-right">Résumé Download</a>
-	 		</div>
-            <!-- End container -->
-	 	</div>
-        <!-- End bottom nav bar -->
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         
-        <!--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="js/bootstrap.js"></script>-->
+        <script>
+            $('#top-nav').onePageNav({
+                 currentClass: 'active',
+                 changeHash: false,
+                 scrollSpeed: 1200
+            });
+        </script>
         
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-
-        <!-- Scrolling Nav JavaScript -->
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/scrolling-nav.js"></script>
-        
-
 	</body>
     <!-- End body -->
 
