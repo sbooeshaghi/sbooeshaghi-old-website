@@ -266,6 +266,19 @@ section {
     padding-right:10%;
 }
 
+#projects h1 {
+    color:white;
+}
+
+#projects h3 {
+    color:#414141;
+}
+
+#projects p {
+    color:white;
+    font-size: calc(100% + .3vw);
+}
+
 #interests {
     background-color:white; 
     color:black;
@@ -287,6 +300,11 @@ section {
     color:black;
     height:800px;
     padding-bottom:0;
+}
+
+#contact h1 {
+    color:white;
+    
 }
 
 #bottom-nav {
