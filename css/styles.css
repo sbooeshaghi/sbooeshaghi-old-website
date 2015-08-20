@@ -40,109 +40,82 @@
 .rgba-secondary-2-4 { color: rgba( 69,100,  0,1) }
 
 
-/*Custom Navbar I ended up not using*/
-.navbar-custom {
-  background-color:#2D828A;
-  border-color: #74A40A;/* #013337;*/
+/* =============================================== */
+.navbar-default {
+  background-color: #3c948b;
+  border-color: #51bfb4;
 }
-.navbar-custom .navbar-brand {
-  color: #000;
+.navbar-default .navbar-brand {
+  color: #e7e7e7;
 }
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus {
-  color: #808080;
-  background-color: transparent;
-}
-.navbar-custom .navbar-text {
-  color: #000;
-}
-.navbar-custom .navbar-nav > li:last-child > a {
-  border-right: 1px solid #013337;
-}
-.navbar-custom .navbar-nav > li > a {
-  color: #000;
-  border-left: 1px solid #013337;
-}
-.navbar-custom .navbar-nav > li > a:hover,
-.navbar-custom .navbar-nav > li > a:focus {
-  color: #ffffff;
-  background-color: transparent;
-}
-.navbar-custom .navbar-nav > .active > a,
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
-  color: #ffffff;
-  background-color: #74A40A; /*#013337;*/
-}
-.navbar-custom .navbar-nav > .disabled > a,
-.navbar-custom .navbar-nav > .disabled > a:hover,
-.navbar-custom .navbar-nav > .disabled > a:focus {
-  color: #cccccc;
-  background-color: transparent;
-}
-.navbar-custom .navbar-toggle {
-  border-color: #dddddd;
-}
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
-  background-color: #dddddd;
-}
-.navbar-custom .navbar-toggle .icon-bar {
-  background-color: #cccccc;
-}
-.navbar-custom .navbar-collapse,
-.navbar-custom .navbar-form {
-  border-color: #013135;
-}
-.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
-.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
-}
-.navbar-custom .navbar-nav > .open > a,
-.navbar-custom .navbar-nav > .open > a:hover,
-.navbar-custom .navbar-nav > .open > a:focus {
-  background-color: #013337;
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #ffffff;
 }
-.navbar-custom .navbar-nav > .open > a .caret,
-.navbar-custom .navbar-nav > .open > a:hover .caret,
-.navbar-custom .navbar-nav > .open > a:focus .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
+.navbar-default .navbar-text {
+  color: #e7e7e7;
 }
-.navbar-custom .navbar-nav > .dropdown > a .caret {
-  border-top-color: #999999;
-  border-bottom-color: #999999;
+.navbar-default .navbar-nav > li > a {
+  color: #e7e7e7;
 }
-@media (max-width: 767) {
-  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
-    color: #999999;
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #3c948b;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #e7e7e7;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #ffffff;
+  background-color: #51bfb4;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #3c948b;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #51bfb4;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #51bfb4;
+}
+.navbar-default .navbar-toggle {
+  border-color: #51bfb4;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #51bfb4;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #e7e7e7;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-default .navbar-link {
+  color: #e7e7e7;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #e7e7e7;
   }
-  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #ffffff;
-    background-color: transparent;
   }
-  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #013337;
-  }
-  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
-  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #cccccc;
-    background-color: transparent;
+    background-color: #51bfb4;
   }
 }
-.navbar-custom .navbar-link {
-  color: #999999;
-}
-.navbar-custom .navbar-link:hover {
-  color: #ffffff;
-}
+
+/* ======================================================= */
 
 
 #stroke {
@@ -157,15 +130,18 @@
 h1 {
 font-family: 'Maven Pro', sans-serif;
 font-size:calc(100% + 5vw);
+color: #414141
 }
 
 h2 {
 font-family: 'Maven Pro', sans-serif;
 font-size:calc(100% + 1vw);
+color: #414141;
 }
 
 h3, h4, h5, h6 {
 font-family: 'Maven Pro', sans-serif;
+color: #414141;
 }
 
 section1 h1 {
@@ -178,6 +154,7 @@ p {
     font-family: 'Cardo', serif;
     font-weight: 400;
     font-size:calc(100% + .45vw);
+    color: #414141;
 }
 
 a {
@@ -186,8 +163,8 @@ a {
 }
 
 .v-center {
-    padding-top:7%;
-    padding-bottom:3%;
+    padding-top:25%;
+
 }
 
 section {
@@ -197,32 +174,100 @@ section {
     width:100%;
 }
 
-html, body {
-    background:center center no-repeat fixed url("makemit.jpg");
-    background-size: contain;
+
+
+.fullScreenImg {
+    width: 100%;
+    height: 100%;
+    
+    background-image: url("makemit.jpg"); 
+    
+    background-repeat: no-repeat;
+    
+    background-position: center center;
+               position: relative;
+    
+    
+    
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    
+    overflow: hidden;
+
+
+    z-index: -2;
+    
 }
 
-#section1 {
-    color:white;
-    width:100%;
+.darkOverlay {
     height:100%;
-    line-height: 100px;
-    padding-left:7%;
+    width:100%;
+    
+
+    background-color:#414141;
+    background-repeat: no-repeat;
+    background-position: center center;
+               position:fixed;
+    
+    overflow: hidden;
+
+    z-index:-1;
+    
+    
+    filter: alpha(opacity=90); 
+    -khtml-opacity: 0.9;      
+      -moz-opacity: 0.9;       
+           opacity: 0.9;
+    
+}
+
+
+.blur {
+    opacity: 0;
+}
+
+.home {
+    height:100%;
+    width:100%;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    overflow: hidden;
+    
+    
+    /* GOOD GREY COLOR -> #666 ->darker grey #414141 color -> seafoam green #3c948b */
+    
+    
+    
+    
+}
+
+#home {
 }
 
 #about {
-    background-color:#2D828A; /*darkolivegreen;*/
+    background-color:white; 
     color:black;
     width:100%;
     padding-left:10%;
     padding-right:10%;
 }
 
+
+
 #projects {
-    background-color:#E34848;
+    background-color:#3c948b;
+    color:black;
+    width:100%;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+#interests {
+    background-color:white; 
     color:black;
     width:100%;
     padding-left:10%;
@@ -237,7 +282,7 @@ html, body {
 
 #contact {
     width:100%;
-    background-color:darkolivegreen;
+    background-color:#3c948b;
     /*background: url(cubes.png) repeat 0 0;*/
     color:black;
     height:800px;

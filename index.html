@@ -80,7 +80,7 @@ Sina
 	<body>
 
         <!-- Top static navbar -->
-        <div class="navbar navbar-inverse navbar-fixed-top" style="padding-top:0;padding-bottom:0;">
+        <div class="navbar navbar-default navbar-fixed-top" style="padding-top:0;padding-bottom:0;">
           <div class="container-fluid">
               <div class="navbar-header">
                   <a class="navbar-brand" href="#">Sina Booeshaghi</a>
@@ -93,9 +93,10 @@ Sina
               
             <div id="navbar" class="navbar-collapse collapse navHeaderCollapse">
               <ul class="nav navbar-nav navbar-right" id="top-nav">
-                <li><a href="#section1">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
                 <li><a href="#resume">Résumé</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
@@ -105,8 +106,17 @@ Sina
         <!-- End top static navbar -->
 
         <!-- Title header -->
-        <section class="container-fluid" id="section1">
-            <h1 class="v-center" id="stroke"><u>WELCOME</u></h1>
+        <section class="home" id="home">
+            <div class="fullScreenImg darkOverlay"></div>
+            <div class="darkOverlay"></div>
+            <h1 class="v-center text-center" style="color:white;">Hi, I am Sina Booeshaghi</h1>
+            <h2 class="text-center" style="color:#3c948b"><strong>Engineering, math, computers</strong></h2>
+            <div class="container-fluid" style="text-align:center;" id="arrow-nav">
+                <a href="#about"><button type="button" class="btn btn-default" style="background: transparent; color:white;border:0px;">
+                    <span class="glyphicon glyphicon-menu-down"></span>
+                </button>
+                </a>
+            </div>
         </section>
         <!-- End title header -->
         
@@ -115,7 +125,7 @@ Sina
             <div class="col-lg-12" style="padding-top: 1em; padding-bottom:1em;">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h1 class="page-header">Meet Sina</h1>
+                        <h1 class="page-header" style="border-bottom: solid 1px #3c948b;">Meet Sina</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -208,6 +218,18 @@ Sina
         </section>
         <!-- End projects section -->
         
+        <!-- Interests section -->
+        <section class="container-fluid" id="interests">
+            <div class="col-lg-12 text-center" style="padding-top: 1em; padding-bottom:1em;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header" style="border-bottom: solid 1px #3c948b;">Interests</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End interests section -->
+        
         <!-- Resume section -->
         <section class="container-fluid" id="resume">
             <div class="row">
@@ -252,7 +274,7 @@ Sina
 							<div class="form-group">
 								<label for="inputPassword1" class="col-lg-2 control-label">Message</label>
 								<div class="col-lg-10">
-									<textarea class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Your message..."></textarea>
+									<textarea class="form-control" rows="5" id="inputMessage" name="inputMessage" placeholder="Your message..."></textarea>
 								</div>
 							</div>
 							<div class="form-group">
@@ -277,11 +299,11 @@ Sina
 <!-- End body content -->
 
 <!-- Bottom nav bar -->
-        <section class="container-fluid navbar navbar-inverse navbar-fixed-bottom" id="bottom-nav">
+        <section class="container-fluid navbar navbar-inverse navbar-static-bottom" id="bottom-nav">
                 
                     <a class = "navbar-text pull-left">Built by Sina Booeshaghi</a>
                     <!-- This is where you link your resume within the local files -->
-                    <a href="resume.pdf" class = "navbar-btn btn-info btn pull-right">Résumé Download</a>
+                    <a href="resume.pdf" class = "navbar-btn btn-success btn pull-right">Résumé Download</a>
                 <!-- End container -->
 
         </section>
@@ -299,6 +321,15 @@ Sina
                  scrollSpeed: 1200
             });
         </script>
+        
+        <script>
+            $('#arrow-nav').onePageNav({
+                 currentClass: 'active',
+                 changeHash: false,
+                 scrollSpeed: 1200
+            });
+        </script>
+        
         
 	</body>
     <!-- End body -->

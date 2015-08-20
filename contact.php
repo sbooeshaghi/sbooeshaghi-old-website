@@ -1,6 +1,6 @@
 <?php
 /* Set e-mail recipient */
-    $myemail = "contactsina@mit.edu";
+    $myemail = "f245946f9cde4b95a5d1a38eb312a281.protect@whoisguard.com";
 
     /* Check all form inputs using check_input function */
     $name = check_input($_POST['inputName'], "Your Name");
@@ -34,7 +34,8 @@
     mail($myemail, $email_subject, $message, $headers);
 
     /* Redirect visitor to the thank you page */
-    header('Location: confirm.html');
+    //header('Location: confirm.html');
+    echo "Mail sent, thank you"
     exit();
 
     /* Functions we used */
