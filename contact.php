@@ -1,4 +1,4 @@
-<?php
+<?PHP
 /* Set e-mail recipient */
     $myemail = "f245946f9cde4b95a5d1a38eb312a281.protect@whoisguard.com";
 
@@ -34,8 +34,8 @@
     mail($myemail, $email_subject, $message, $headers);
 
     /* Redirect visitor to the thank you page */
-    //header('Location: confirm.html');
-    echo "Mail sent, thank you"
+    header('Location: confirm.html');
+    //echo "Mail sent, thank you"
     exit();
 
     /* Functions we used */
