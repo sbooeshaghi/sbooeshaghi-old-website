@@ -3,7 +3,7 @@
     $inputEmail = $_POST['inputEmail'];
     $inputMessage = $_POST['inputMessage'];
     $from = 'From: Peronal Website'; 
-    $to = 'contactsina@mit.edu'; 
+    $to = 'alisina@mit.edu'; 
     $subject = '[PWS] New Message';
     $inputHuman = $_POST['inputHuman'];
 			
