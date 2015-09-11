@@ -42,8 +42,8 @@
 
 /* =============================================== */
 .navbar-default {
-  background-color: #3c948b;
-  border-color: #51bfb4;
+  background-color: #8C1717;
+  border-color: #8C1717;
 }
 .navbar-default .navbar-brand {
   color: #e7e7e7;
@@ -61,7 +61,7 @@
   color: #ffffff;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu {
-  background-color: #3c948b;
+  background-color: #8C1717;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
   color: #e7e7e7;
@@ -69,24 +69,24 @@
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
   color: #ffffff;
-  background-color: #51bfb4;
+  background-color: #ff4040;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
-  background-color: #3c948b;
+  background-color: #8C1717;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #51bfb4;
+  background-color: #ff4040;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   color: #ffffff;
-  background-color: #51bfb4;
+  background-color: #ff4040;
 }
 .navbar-default .navbar-toggle {
-  border-color: #51bfb4;
+  border-color: #ff4040;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #51bfb4;
+  background-color: #ff4040;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #e7e7e7;
@@ -111,7 +111,7 @@
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #51bfb4;
+    background-color: #ff4040;
   }
 }
 
@@ -125,6 +125,13 @@
     -1px 1px 0 #000,
     1px 1px 0 #000;
     
+}
+.strokeme {
+    text-shadow:
+    -.35px -.35px 0 black,
+    .35px -.35px 0 black,
+    -.35px .35px 0 black,
+    .35px .35px 0 black;
 }
 
 h1 {
@@ -259,7 +266,7 @@ section {
 
 
 #projects {
-    background-color:#3c948b;
+    background-color:#8C1717;
     color:black;
     width:100%;
     padding-left:10%;
@@ -295,7 +302,7 @@ section {
 
 #contact {
     width:100%;
-    background-color:#3c948b;
+    background-color:#8C1717;
     /*background: url(cubes.png) repeat 0 0;*/
     color:black;
     height:800px;
