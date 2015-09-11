@@ -294,7 +294,7 @@ Sina
             <!-- Form entry field -->
             <div class="container">
                 <div class="row">
-						<form name="contactform" method="post" action="http://alisina.scripts.mit.edu/contact.php" class="form-horizontal" role="form">
+						<form id="contactform" class="form-horizontal" role="form">
 							<div class="form-group">
 								<label for="inputName" class="col-lg-2 control-label">Name</label>
 								<div class="col-lg-10">
@@ -321,7 +321,7 @@ Sina
 							</div>
 							<div class="form-group">
 								<div class="col-lg-offset-2 col-lg-10">
-									<button type="submit" class="btn btn-default">
+									<button type="button" id="submit" class="btn btn-default">
 										Send Message
 									</button>
 								</div>
@@ -355,7 +355,7 @@ Sina
 		<script src="js/bootstrap.js"></script>
         <script src="js/plugins.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        
+        <script src="js/scripts.js"></script>
         <script>
             $('#top-nav').onePageNav({
                  currentClass: 'active',
