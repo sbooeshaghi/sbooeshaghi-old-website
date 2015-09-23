@@ -3,11 +3,11 @@
     $inputEmail = $_POST['inputEmail'];
     $inputMessage = $_POST['inputMessage'];
     $from = 'From: Peronal Website'; 
-    $to = 'alisina@mit.edu'; 
+    $to = 'contactsina@mit.edu'; 
     $subject = '[PWS] New Message: '.$inputName;
     $inputHuman = $_POST['inputHuman'];
 			
-    $body = "From: $inputName\n E-Mail: $inputEmail\n Message:\n $inputMessage";
+    $body = "From: $inputName\nE-Mail: $inputEmail\nMessage:\n$inputMessage";
 
     if ($inputName != '' && $inputEmail != '') {
         if ($inputHuman == '4') {				 
