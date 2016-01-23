@@ -322,3 +322,17 @@ section {
 
 }
 
+/* ---- particles.js container ---- */
+#trianglify {
+  z-index: -1;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
